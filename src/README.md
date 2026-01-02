@@ -1,220 +1,234 @@
-# 🌱 rupiya.app
+🌱 rupiya.app
 
-**India's Climate-Positive Agriculture Platform**
+India’s Climate-Positive Agriculture Platform
 
-rupiya.app is a comprehensive agricultural technology platform empowering 50,000+ farmers across 500,000 hectares with residue-free farming, carbon credit generation, and complete financial inclusivity.
+rupiya.app is a technology-driven agricultural ecosystem empowering 50,000+ farmers across 500,000 hectares through residue-free farming, carbon credits, and financial inclusion.
 
-## 🎯 Mission
+🚀 Vision
 
-Transform Indian agriculture into a climate-positive, financially inclusive ecosystem through technology-driven solutions and partnerships.
+To transform Indian agriculture into a climate-positive, data-driven, and financially inclusive ecosystem using technology, transparency, and verified impact.
 
-## ✨ Key Features
+🎯 Core Objectives
 
-### For Farmers
-- 🛰️ **Satellite Soil Testing** - AI-powered soil analysis from space
-- 📊 **Crop Monitoring** - Real-time satellite tracking and traceability
-- 👨‍🌾 **Agronomical Advisory** - Expert guidance through software and specialists
-- 🌿 **35 Residue-Free Inputs** - Certified agricultural inputs
-- 🍃 **Carbon Credits** - Earn ₹800 per carbon credit through regenerative agriculture
-- 🛡️ **Parametric Insurance** - Coverage for weather and wildlife damage
-- 💳 **Farm Credit Support** - Easy access to financial assistance
-- 🚚 **Buy-Back Guarantee** - Direct purchase from farm gate
+Enable residue-free, sustainable farming
 
-### For Stakeholders
-- **FPOs** - Training programs, carbon revenue, supply chain access
-- **Buyers** - Quality traceability, certifications, consistent procurement
-- **Investors** - Impact metrics, growth potential, ESG alignment
+Generate verified carbon credits for farmers
 
-## 🏗️ Technology Stack
+Provide financial inclusion & insurance
 
-### Frontend
-- **React** - UI framework
-- **Tailwind CSS** - Styling
-- **shadcn/ui** - Component library
-- **Lucide React** - Icons
-- **Framer Motion** - Animations
-- **React Query** - Data fetching & state management
-- **React Router** - Navigation
+Ensure traceability, transparency, and trust
 
-### Backend (Base44 Platform)
-- Built-in authentication
-- Entity management (database)
-- Integration SDK
-- Pre-configured API client
+Connect farmers, FPOs, buyers, and investors
 
-### Additional Libraries
-- `date-fns` - Date formatting
-- `recharts` - Data visualization
-- `react-hook-form` - Form handling
-- `react-markdown` - Markdown rendering
+🌟 Key Features
+👨‍🌾 For Farmers
 
-## 📁 Project Structure
+🛰️ Satellite-Based Soil & Crop Analysis
 
-rupiya-app/ ├── entities/ # Data models (JSON schemas) │ └── [Entity].json # Define your data structure │ ├── pages/ # Main application pages (FLAT structure) │ ├── Home.js # Landing page with hero, services, CTA │ ├── ForFarmers.js # Farmer-focused solutions │ ├── ForFPOs.js # FPO solutions │ ├── ForBuyers.js # Buyer solutions │ ├── ForInvestors.js # Investor information │ ├── ResidueFree.js # Residue-free farming details │ └── CarbonCredits.js # Carbon credit program info │ ├── components/ # Reusable components (CAN have subfolders) │ └── ui/ # shadcn/ui components │ ├── Layout.js # App layout with header & footer └── globals.css # Global styles (optional)
+📊 Real-Time Crop Monitoring
 
+🌱 Residue-Free Farming Inputs
 
-## 🚀 Getting Started
+🍃 Carbon Credit Earnings (₹800 per credit)
 
-### Prerequisites
-- Node.js 16+ installed
-- Base44 account (for backend services)
+🛡️ Parametric Crop & Weather Insurance
 
-### Development Setup
+💳 Access to Farm Credit & Financial Services
 
-1. **Clone and Navigate**
-   ```bash
-   cd your-rupiya-app
-Install Dependencies
+🚚 Guaranteed Buy-Back Program
 
+🏢 For Stakeholders
+FPOs
+
+Digital onboarding & training
+
+Carbon revenue participation
+
+Supply chain access
+
+Buyers
+
+End-to-end traceability
+
+Quality-certified produce
+
+Reliable sourcing
+
+Investors
+
+ESG-aligned investments
+
+Measurable impact metrics
+
+Transparent performance tracking
+
+🏗️ Tech Stack
+Frontend
+
+React
+
+Tailwind CSS
+
+shadcn/ui
+
+Lucide Icons
+
+Framer Motion
+
+React Router
+
+React Query
+
+Backend (Base44 Platform)
+
+Built-in authentication
+
+Entity-based database
+
+API & SDK support
+
+Role-based access control
+
+Utilities
+
+date-fns – Date handling
+
+react-hook-form – Form management
+
+recharts – Data visualization
+
+react-markdown – Markdown rendering
+
+📁 Project Structure
+rupiya-app/
+│
+├── entities/                 # Data schemas
+│   └── Farm.json
+│
+├── pages/                    # Application pages (flat structure)
+│   ├── Home.js
+│   ├── ForFarmers.js
+│   ├── ForFPOs.js
+│   ├── ForBuyers.js
+│   ├── ForInvestors.js
+│   ├── ResidueFree.js
+│   └── CarbonCredits.js
+│
+├── components/
+│   ├── ui/                   # shadcn/ui components
+│   └── Layout.js
+│
+├── globals.css
+└── main.jsx
+
+🚀 Getting Started
+Prerequisites
+
+Node.js ≥ 16
+
+Base44 account
+
+Setup
+cd rupiya-app
 npm install
-Start Development Server
-
 npm run dev
-Access the App Open http://localhost:3000 in your browser
 
-🔑 Key Pages
-Home (pages/Home.js)
-Hero section with platform overview
-7 integrated services showcase
-Carbon credits highlight section
-Stakeholder solution cards
-Financial inclusivity preview
-Call-to-action sections
-Layout (Layout.js)
-Fixed header with navigation
-Mobile-responsive menu
-Logo and branding
-Footer with quick links and contact info
-📊 Data Management
-Built-in User Entity
-Every app includes a User entity with:
 
-id - Unique identifier
-email - User email
-full_name - Full name
-role - 'admin' or 'user'
-created_date - Account creation timestamp
-Custom Entities
-Define custom entities in entities/[EntityName].json using JSON Schema format.
+Open in browser:
 
-Example:
+http://localhost:3000
 
+🧩 Data Model (Example)
 {
   "name": "Farm",
   "type": "object",
   "properties": {
-    "name": {"type": "string"},
-    "location": {"type": "string"},
-    "hectares": {"type": "number"}
+    "name": { "type": "string" },
+    "location": { "type": "string" },
+    "hectares": { "type": "number" }
   },
   "required": ["name"]
 }
-🔌 Using the Base44 SDK
+
+🔌 Base44 SDK Usage
 Authentication
 import { base44 } from '@/api/base44Client';
 
-// Get current user
 const user = await base44.auth.me();
-
-// Update current user
-await base44.auth.updateMe({ custom_field: "value" });
-
-// Logout
+await base44.auth.updateMe({ role: "farmer" });
 base44.auth.logout();
-Entity Operations
-// List all records
+
+CRUD Operations
+// Create
+await base44.entities.Farm.create({ name: "Green Valley", hectares: 50 });
+
+// Read
 const farms = await base44.entities.Farm.list();
 
-// Filter records
-const myFarms = await base44.entities.Farm.filter(
-  { created_by: user.email },
-  '-created_date',
-  10
-);
+// Update
+await base44.entities.Farm.update(id, { hectares: 60 });
 
-// Create record
-await base44.entities.Farm.create({
-  name: "Green Valley Farm",
-  hectares: 50
-});
+// Delete
+await base44.entities.Farm.delete(id);
 
-// Update record
-await base44.entities.Farm.update(farmId, { hectares: 60 });
-
-// Delete record
-await base44.entities.Farm.delete(farmId);
-Navigation
-import { createPageUrl } from '@/utils';
-import { Link } from 'react-router-dom';
-
-// Navigate to pages
-<Link to={createPageUrl("ForFarmers")}>
-  Farmer Solutions
-</Link>
 🎨 Styling Guidelines
-Use Tailwind CSS utility classes
-Leverage shadcn/ui components from @/components/ui/
-Maintain responsive design (mobile-first)
-Use emerald/green color scheme for branding
-Include smooth transitions and animations
-Brand Colors
-Primary: emerald-600 (#059669)
-Secondary: green-600 (#16a34a)
-Accent: emerald-50 (light backgrounds)
-📦 Available Components
-UI Components (@/components/ui/)
-Button
-Card (Card, CardContent, CardHeader, CardTitle)
-Badge
-Input
-Textarea
-Select
-DropdownMenu
-Popover
-Calendar
-And more shadcn/ui components
-🔧 Development Guidelines
-Pages are flat - No subfolders in pages/
-Components can nest - Organize components in subfolders
-Use existing packages - Don't install unnecessary dependencies
-Responsive by default - Mobile-first approach
-Keep files focused - Small, single-purpose components
-🌐 Integrations
-Core Integrations Available
-InvokeLLM - AI-powered responses
-SendEmail - Email notifications
-UploadFile - File storage
-GenerateImage - AI image generation
-ExtractDataFromUploadedFile - Data extraction from files
-Usage:
 
-import { base44 } from '@/api/base44Client';
+Tailwind-first design
 
-const result = await base44.integrations.Core.InvokeLLM({
-  prompt: "Analyze soil data...",
-  add_context_from_internet: true
-});
-📈 Roadmap
-✅ Core platform with 7 integrated services
-✅ Carbon credit partnership with Carboneg Europe
-✅ Farmer, FPO, Buyer, and Investor portals
-🔄 Complete rural financial ecosystem
-Recharge & bills
-Digital gold
-Travel booking
-Insurance products
-Credit access
-🤝 Partnership
-Carboneg Europe - Exclusive collaboration for verified carbon credit generation across 500,000 hectares.
+Mobile-first layout
+
+Consistent green palette
+
+Primary: #059669
+
+Secondary: #16a34a
+
+Backgrounds: #ecfdf5
+
+Smooth animations via Framer Motion
+
+🔗 Integrations
+
+InvokeLLM – AI-powered analysis
+
+SendEmail – Notifications
+
+UploadFile – Secure storage
+
+GenerateImage – AI imagery
+
+ExtractDataFromUploadedFile – Smart data parsing
+
+🗺️ Roadmap
+
+✅ Core platform launch
+✅ Carbon credit partnership (Carboneg Europe)
+🚧 Financial ecosystem expansion
+🚧 Insurance & lending modules
+🚧 Marketplace & trade finance
+
+🤝 Partnerships
+
+Carboneg Europe
+Exclusive partner for certified carbon credit generation across 500,000+ hectares.
+
+📊 Impact Targets
+
+🌾 500,000 hectares onboarded
+
+👨‍🌾 50,000+ farmers empowered
+
+💰 ₹800 per carbon credit
+
+⏳ 3-year sustainability cycle
 
 📞 Contact
+
 Email: contact@rupiya.app
+
 Location: India
-Target: 50,000+ farmers across 500,000 hectares
-🎯 Key Statistics
-🌾 500,000 hectares target coverage
-👥 50,000+ farmers to onboard
-💰 ₹800 per carbon credit additional income
-📅 3 years commitment period
+
 📄 License
-© 2024 rupiya.app. Building India's climate-positive agricultural future.
+
+© 2024 rupiya.app — All Rights Reserved
+Building India’s climate-positive agricultural future 🌱
