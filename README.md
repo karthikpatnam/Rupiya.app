@@ -88,7 +88,6 @@ For questions or support, contact: contact@rupiya.app
 2. **Clone and setup locally:**
 
 ```bash
-git clone <your-repo-url>
 cd rupiya-app
 ```
 
@@ -113,3 +112,4 @@ git add .
 git commit -m "Initial commit: Complete rupiya.app website"
 git push origin main
 ```
+
